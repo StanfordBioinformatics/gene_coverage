@@ -56,3 +56,8 @@ chr1:11880	96	96.00	96
 chr1:11881	95	95.00	95
 chr1:11882	97	97.00	97
 ```
+## Output
+Output goes to stdout. You can save it to a file using a redirect:
+```
+gene_coverage.py exons_bedfile genelist coverage_file > outputfile
+```
