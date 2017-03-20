@@ -37,7 +37,7 @@ ABCA12
 ```
 Expected format for coverage_file:
 ```
-Locus	Total_Depth	Average_Depth_sample	Depth_for_case0078
+Locus	Total_Depth	Average_Depth_sample	Depth_for_NA12878
 chr1:11874	91	91.00	91
 chr1:11875	93	93.00	93
 chr1:11876	91	91.00	91
