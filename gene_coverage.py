@@ -88,7 +88,7 @@ def gene_coverage():
                 for current_gene in current_genes:
                     genes[current_gene]['total_bases'] += 1
                     for threshold in COVERAGE_DEPTH_THRESHOLDS:
-                        if total_depth < threshold:
+                        if int(total_depth) < threshold:
                             genes[current_gene][threshold] += 1
                         
     # Print header line
