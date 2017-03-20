@@ -1,6 +1,14 @@
 # gene_coverage
 Calculates gene-level breadth-of-coverage at several depth-of-coverage thresholds.
 
+## Installation
+
+Only one external package is needed:
+```
+pip install progressbar2
+```
+
+## Usage
 ```
 usage: gene_coverage.py [-h] exons_bedfile genelist coverage_file
 
