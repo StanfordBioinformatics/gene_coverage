@@ -101,7 +101,7 @@ def gene_coverage():
     for gene in sorted(genes):
         row = [gene, genes[gene]['chrom'], genes[gene]['exons'], genes[gene]['total_bases']]
         row.extend([genes[gene][threshold] for threshold in COVERAGE_DEPTH_THRESHOLDS])
-        row.extend([float(genes[gene][threshold])/float(genes[gene]['total_bases']) if genes[gene]['total_bases'] > 0 else 0.0 for threshold in COVERAGE_DEPTH_THRESHOLDS])
+        row.extend(['%.2f' % (float(genes[gene][threshold])/float(genes[gene]['total_bases'])*100) if genes[gene]['total_bases'] > 0 else '0.00' for threshold in COVERAGE_DEPTH_THRESHOLDS])
         row = map(str, row)
         print '\t'.join(row)
 
