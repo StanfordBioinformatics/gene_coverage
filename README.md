@@ -61,3 +61,17 @@ Output goes to stdout. You can save it to a file using a redirect:
 ```
 gene_coverage.py exons_bedfile genelist coverage_file > outputfile
 ```
+Example output:
+```
+gene    chr exons   total_bases bases<5x    bases<10x   bases<15x   bases<20x   %bases<5x   %bases<10x  %bases<15x  %bases<20x
+A2ML1   chr12   61  5   0   0   0   0   0.00    0.00    0.00    0.00
+A4GALT  chr22   3   2092    0   0   19  87  0.00    0.00    0.91    4.16
+AAED1   chr9    6   1225    0   0   0   0   0.00    0.00    0.00    0.00
+AAGAB   chr15   30  3406    0   0   0   4   0.00    0.00    0.00    0.12
+ABHD17C chr15   3   2360    0   0   0   3   0.00    0.00    0.00    0.13
+ABHD2   chr15   26  9133    1   1   1   6   0.01    0.01    0.01    0.07
+ABHD3   chr18   9   3   0   0   0   0   0.00    0.00    0.00    0.00
+ABHD4   chr14   7   2509    0   0   0   0   0.00    0.00    0.00    0.00
+ABHD5   chr3    7   0   0   0   0   0   0.00    0.00    0.00    0.00
+ABHD6   chr3    9   0   0   0   0   0   0.00    0.00    0.00    0.00
+```
